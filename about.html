@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Two-Column Layout</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url('bacground-08.png'); /* Add your background image here */
+            background-size: cover; /* Ensures the image covers the whole page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; 
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .two-column {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .skill {
+            display: inline-block;
+            background-color: #000000;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Me</h1>
+            <img src="picture decennt.jpg" alt="Your Name" class="profile-picture">
+        </header>
+
+        <div class="two-column">
+            <div class="column">
+                <section>
+                    <h2>Introduction</h2>
+                    <p>Hello! I'm Anvita Mathew, a Interaction design specilised student doing her bachelors in design, based in Banglore. I'm a hardworker who is passionate about Design and UI/UX in specific.</p>
+                </section>
+
+                <section>
+                    <h2>Skills</h2>
+                    <div>
+                        <span class="skill">Research</span>
+                        <span class="skill">Wireframing</span>
+                        <span class="skill">Illustrations</span>
+                        <span class="skill">Skectching</span>
+                        <span class="skill">Typography</span>
+                        <span class="skill">Design Thinking</span>
+                        <span class="skill">Mindmapping</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+                    <ul>
+                        <li>
+                            <strong>Schooling</strong><br>
+                        Excel Public School, Mysore<br>
+                        Year of graduation:2020
+                        </li>
+                        <li>
+                            <strong>Senior Secondary</strong><br>
+                        Excel Public School, Mysore<br>
+                        Year of graduation:2022
+                        </li>
+                        <li>
+                            <strong> Undergrauation </strong> Bachelor in Design(Bdes)<br>
+                            Ongoing 
+            
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="column">
+                <section>
+                    <h2>Personality</h2>
+                    <ul>
+                        <li>
+                            <strong>Strengths</strong>
+                            Hardworker<br>
+                            Creative<br>
+                            Collaborative<br>
+                         
+                        </li>
+                        <li>
+                            <strong>Weaknesses</strong>
+                            Start Date - End Date<br>
+                            Work Life balance<br>
+                            Can not work well in the last minute<br>
+
+                    
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Interests</h2>
+                    <ul>
+                        <li>Sketching</li>
+                        <li>Painting</li>
+                        <li>Spending time Outdoors</li>
+                        <li>Cooking</li>
+                        <li>Photography</li>                    </ul>
+                </section>
+
+                <section>
+                    <h2>Contact</h2>
+                    <p>Feel free to reach out to me at:</p>
+                    <ul>
+                        <li>Email:sampleemail@gmail.com</li>
+                        <li>Phone number: 123456789</li>
+                        <li>Behance:Anvita </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

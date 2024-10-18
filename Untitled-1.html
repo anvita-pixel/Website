@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Anvita Mathew </title>
+        <style>
+            body {
+                text-align: center;
+                font-family: 'Helvetica', sans-serif;
+                background-image: url('background.jpg'); /* Replace with your image URL */
+                background-size: cover; /* Ensure the image covers the whole page */
+                background-position: center; /* Center the image */
+                
+            }
+
+            .animal-images img {
+                margin-right: 20px;
+            }
+
+            /* Info box styling */
+            .info-box {
+                background-color: #f0e68c; /* Light khaki color */
+                padding: 20px;
+                margin: 20px auto;
+                width: 50%; /* Box width */
+                border-radius: 8px;
+                border: 2px solid #333;
+                font-style: italic; /* Make text inside the box italic */
+            }
+
+            .info-box p {
+                margin: 0;
+                color: #333;
+                font-size: 14px;
+            }
+
+            .quiz-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .quiz {
+                padding: 10px;
+                width: 300px;
+            }
+
+            .separator {
+                border-left: 1px solid #000;
+                height: 100px;
+            }
+
+            a {
+                color: #0066cc; 
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+            img.main-image {
+                transition: transform 0.3s ease-in-out;
+                border-radius: 20px;
+            }
+
+            img.main-image:hover {
+                transform: scale(1.2); /* Zoom effect */
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>The Great Indian Bengal Tiger</h1>
+        <h3>Learn about Tigers</h3>
+
+    
+        <div class="info-box">
+            <p>Bengal tiger(Pantheria tigris) inhabiting the hot and humid forests, a
+                nd wetlands of India, Bangladesh, Bhutan, and Nepal. The Bengal tiger’s appearance is distinguished from other 
+                tiger subspecies by its orange coat accented by prominent brownish-to-black stripesDiscover the magnificent 
+                beauty and power of the Bengal Tiger, one of the most iconic animals in the wild.</p>
+        </div>
+
+        <p>See more <a href="https://unsplash.com/photos/bengal-tiger-gRB4Euk4BYQ">photos</a> in our gallery.</p>
+        <br>
+        <img class="main-image" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbUEdnqhNxqb0viBnGfBZ_V2vfDxRcZrLUr4maJt_Cj_AYYtXb" width="500" height="339" alt="Bengal Tiger">
+        <br><br>
+
+        <h1>Lists</h1>
+        <h3>Things Tigers Commonly Eat</h3>
+            <li>Deer</li>
+            <li>Wild Boar</li>
+            <li>Buffalo</li>
+        </ul>
+        <br>
+
+        <div class="animal-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Jtp2LktbYaGeaSeUnhmnht8o2cRgB3IGUQ&s" alt="Deer" width="150" height="100">
+            <img src="https://nepaldesk.com/sites/default/files/styles/content_image_display_/public/2023-05/Indian%20Wild%20Boar%20-%20shape.jpg?itok=Nw7JzLC3" alt="Wild Boar" width="150" height="100">
+            <img src="https://safariwest.com/wp-content/uploads/cape-buffalo.jpg" alt="Buffalo" width="150" height="100">
+        </div>
+
+        <h1>Quiz</h1>
+
+        <div class="quiz-container">
+            <div class="quiz">
+                <p>Are all the stripes of a tiger unique?</p>
+                <form>
+                    <input type="radio" id="true" name="tiger-stripes" value="true">
+                    <label for="true">True</label><br>
+                    <input type="radio" id="false" name="tiger-stripes" value="false">
+                    <label for="false">False</label>
+                </form>
+            </div>
+
+ 
+            <div class="separator"></div>
+
+            <div class="quiz">
+                <p>Do tigers live in groups?</p>
+                <form>
+                    <input type="radio" id="yes" name="tiger-group" value="yes">
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="tiger-group" value="no">
+                    <label for="no">No</label>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,452 @@
+/* Reset default margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Remove link underline and inherit text color */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Main section with image background */
+.section {
+    height: 100vh; /* Full height of viewport */
+    background-image: url('Artboard\ 1.png'); /* Add your image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+/* White section for "About Me" */
+.white {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Grey section to make the page scrollable */
+.grey {
+    background-color: #000000;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Top left "ABOUT" link */
+.top-left {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    z-index: 10;
+}
+
+.top-left h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Top right menu */
+.top-right-menu {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.top-right-menu span {
+    color: #FABA15;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Image positioning */
+.section-image {
+    position: absolute; /* Allows the image to overlap with the button */
+    top: -150px; /* Adjust this value as needed to position the image correctly */
+    left: 83%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Adjust to keep it centered */
+    width: 720px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure the image is behind the button */
+}
+
+
+
+/* About Me section content */
+.about-me-content {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-top:-20px;
+
+}
+
+.image-container {
+    position: relative; /* Allows child elements (images) to be positioned */
+    height: 500px; /* Adjust this based on your desired height */
+    width: 100%; /* Full width of the container */
+}
+
+.image {
+    position: absolute; /* Allows absolute positioning */
+    width: 100px; /* Adjust the size of the images */
+    height: auto;
+}
+
+.image1 {
+    top: -190px;
+    left: 90px;
+}
+
+.image2 {
+    bottom: 600px;
+    right: 90px;
+}
+
+/* Skills strip styling */
+.skills-strip {
+    background-color: #1a1a1a;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0px;
+    margin-top: -400px;
+    
+}
+
+.skills-heading {
+    color: #FABA15;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 80px;
+    text-align: center;
+}
+
+/* Skills list styling */
+.skills-list {
+    display: flex;
+    justify-content: center; /* Centers skills list */
+    gap: 100px;
+}
+
+/* Individual skill styling */
+.skill {
+    position: relative;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Hover effect container for each skill */
+.hover-effect-container {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 20px;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Hover effect that fills up on hover */
+.hover-effect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FABA15;
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease;
+    z-index: 1;
+}
+
+/* Show hover effect on hover */
+.skill:hover .hover-effect-container {
+    opacity: 1;
+}
+
+/* Skill-specific hover effects */
+.figma:hover .hover-effect {
+    width: 100%;
+}
+
+.illustrator:hover .hover-effect {
+    width: 80%;
+}
+
+.photoshop:hover .hover-effect {
+    width: 70%;
+}
+
+.aftereffects:hover .hover-effect {
+    width: 40%;
+}
+
+.html:hover .hover-effect {
+    width: 70%;
+}
+
+.css:hover .hover-effect {
+    width: 40%;
+}
+
+.procreate:hover .hover-effect {
+    width: 70%;
+}
+
+.gif-container {
+    display: flex; /* Arrange GIFs in a row */
+    justify-content: center; /* Center them horizontally */
+    gap: 80px; /* Space between each GIF */
+    margin-top: -100px; /* Reduced space from the previous section */
+}
+.text-container {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items at the start vertically */
+    color: #FFD61D; /* Color of the regular text */
+    margin-top: 150px;
+    margin-bottom: 200px;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    gap: 80px; /* Space between each phrase */
+}
+
+.item {
+    display: flex;
+    flex-direction: column; /* Arrange GIF and text vertically */
+    align-items: center; /* Center GIF and text */
+    gap: 15px; /* Space between the GIF and the text */
+}
+
+.text-gif {
+    width: 300px; /* Adjust the size of the GIF */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+.phrase {
+    text-align: center; /* Center each phrase */
+}
+
+/* Bold text styling */
+.bold-text {
+    font-weight: bold;
+    font-size: 2rem; /* Increase size of the bold text */
+}
+
+.custom-section {
+    margin: 20px auto; /* Centers the section horizontally */
+    width: 100%; /* Full width of the viewport */
+    height: auto; /* Automatically adjusts height based on content */
+    padding: 20px; /* Adds some padding */
+    text-align: center; /* Centers text */
+    margin-top: 80px; /* Space from the previous section */
+    position: relative; /* Keeps the custom image absolute */
+}
+
+.custom-image {
+    position: absolute;
+    top: -30px; /* Position of the custom image */
+    left: 50%; /* Horizontally centers the image */
+    transform: translateX(-50%); /* Ensures perfect horizontal centering */
+    height: 800px; /* Set the height */
+    width: 1200px; /* Set a broader width */
+    z-index: 1; /* Changed to 1 to keep it behind the work images initially */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.work-images {
+    display: flex; /* Use flexbox to arrange images side by side */
+    justify-content: center; /* Center the images horizontally */
+    margin-top: -450px; /* Position relative to custom image (consider adjusting this) */
+    position: relative; /* Relative position to keep it separate */
+    z-index: 2; /* Set this higher than custom image to ensure it's above it */
+}
+
+.work-image {
+    width: 500px; /* Set your desired width for each work image */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 20px; /* Space between images - adjust this value to increase/decrease gap */
+    border-radius: 2%; /* Make the images rounded */
+    object-fit: cover; /* Ensure the image covers the rounded area without distortion */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Hover effects */
+.work-image:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    z-index: 3; /* Bring the hovered image to the front */
+}
+
+/* Change z-index of the custom image when hovering over the work images */
+.work-images:hover .custom-image {
+    z-index: 1; /* Ensure the custom image is behind when hovering over work images */
+}
+
+/* Ensure that non-hovered images stay behind the hovered image */
+.work-images:hover .work-image:not(:hover) {
+    z-index: 2; /* Set non-hovered images' z-index lower */
+}
+
+.table-section { 
+    text-align: center; /* Center-align the text */
+    margin: 300px 0; /* Space above and below the section */
+    margin-top: 300px; /* Space from the previous section */
+    margin-bottom: 100px; /* Space below the section */
+}
+
+.table-heading {
+    font-size: 36px; /* Adjust as needed for the heading size */
+    margin-bottom: 30px; /* Space below the heading */
+    color: #FFD61D; /* Example color: a shade of green */
+}
+
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons */
+    justify-content: center; /* Center the buttons */
+}
+
+.table-button {
+    background-color: #FFD61D; /* Yellow fill */
+    border: none; /* Remove default button border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 15px 30px; /* Padding inside the button */
+    margin: 0 10px; /* Space between buttons */
+    font-size: 18px; /* Adjust font size as needed */
+    color: rgb(255, 255, 255);
+    cursor: pointer; /* Change cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.table-button:hover {
+    background-color: transparent; /* Change to transparent on hover */
+    border: 4px solid #FFD61D; /* Yellow stroke on hover */
+    color: #FFD61D; /* Change text color to yellow */
+}
+.table-section { 
+    text-align: center; /* Center-align the text */
+    margin: 800px 0px; /* Space above and below the section */
+    margin-top: 350px; /* Increased space above the section */
+    margin-bottom: 100px; /* Space below the section */
+}
+
+.table-heading {
+    font-size: 36px; /* Adjust as needed for the heading size */
+    margin-bottom: 30px; /* Space below the heading */
+    color: #FFD61D; /* Example color: a shade of green */
+}
+
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons */
+    justify-content: center; /* Center the buttons */
+}
+
+.table-button {
+    background-color: #FFD61D; /* Yellow fill */
+    border: none; /* Remove default button border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 15px 30px; /* Padding inside the button */
+    margin: 0 20px; /* Space between buttons */
+    font-size: 18px; /* Adjust font size as needed */
+    color: rgb(255, 255, 255); /* Default text color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: all 0.5s ease; /* Smooth transition for hover effect */
+    position: relative; /* Positioning context for absolute children */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.normal-text {
+    display: inline; /* Show normal text */
+    font-weight: bold; 
+}
+
+.hover-text {
+    display: none; /* Hide hover text initially */
+    font-weight: bold; 
+}
+
+.table-button:hover {
+    background-color: transparent; /* Change to transparent on hover */
+    border: 4px solid #FFD61D; /* Yellow stroke on hover */
+    color: #FFD61D; /* Change text color to yellow */
+}
+
+.table-button:hover .normal-text {
+    display: none; /* Hide normal text on hover */
+}
+
+.table-button:hover .hover-text {
+    display: inline; /* Show hover text on hover */
+}
+
+.background-section {
+    height: 100vh; /* Full height of viewport */
+    background-image: url('bottom-03.png'); /* Add your image here */
+    background-size: auto; /* Allow the image to maintain its original size */
+    background-position: left center; /* Initial position to the left, vertically centered */
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 200px;
+    z-index: 0; /* Ensure the background is below other elements */
+}
+
+
+#image {
+    display: block;
+    position: absolute; /* Enable precise positioning */
+    top: 3090px;  /* Adjust this value to move the image vertically */
+    left: 900px; /* Adjust this value to move the image horizontally */
+    width: 600px;  /* Set width for both images */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.7s ease-in-out, content 0s; /* Smooth transition */
+}
+
+/* Change the image when hovering over the image */
+#image:hover {
+    content: url('happyy-05.png'); /* New image */
+    width: 950px;  /* Keep same width as the original image */
+    height: auto; /* Keep same height */
+    top: 3166px;  /* Adjust this value to move the image vertically */
+    left: 720px;; /* Adjust this value to move the image horizontally */
+}
+
+.spotlight {
+    position: absolute;
+    top: 1950px; /* Change this to position the image vertically */
+    left: 410px; /* Change this to position the image horizontally */
+}
+
+.spotlight img {
+    height: 650px; /* Change this to customize the height of the image */
+    width: auto; /* Keeps the image's width proportional to its height */
+}
+
+
+
